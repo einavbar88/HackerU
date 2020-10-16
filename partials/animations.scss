@@ -1,0 +1,152 @@
+@mixin media-min-width($max, $min) {
+    @media (max-width: $max) and (min-width: $min){
+        @content;
+    }
+}
+
+
+@keyframes fade-in-down{
+    from{
+        transform: translateY(-3rem);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fade{
+    opacity: 0;
+}
+
+.slide{
+    opacity: 0;
+}
+
+@keyframes fade-in-up{
+    from{
+        transform: translateY(6rem);
+        opacity: 0.1;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slide-in{
+    0%{
+        transform: translateX(80vw);
+        opacity: 1;
+    }
+    90%{
+        transform: translateX(-3vw);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scroll-bar{
+    0%{
+        transform: translateX(26000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes nav-icon-flip1{
+    0%{}
+    100%{
+        transform: rotateZ(130deg) translateY(-16px) translateX(10px);
+    }
+}
+
+@keyframes nav-icon-flip2{
+    0%{}
+    100%{
+        transform: translateX(60px);
+        opacity: 0;
+    }
+}
+
+@keyframes nav-icon-flip3{
+    0%{}
+    100%{
+        transform: rotateZ(-130deg) translateY(6px) translateX(-3px);
+    }
+}
+
+@keyframes nav-icon-flipback1{
+    0%{
+        transform: rotateZ(130deg) translateY(-15px) translateX(10px);
+    }
+    100%{
+        transform: rotateZ(0deg) translateY(0);
+    }
+}
+
+@keyframes nav-icon-flipback2{
+    0%{
+        transform: translateX(60px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes nav-icon-flipback3{
+    0%{
+        transform: rotateZ(-130deg) translateY(6px) translateX(-3px);
+    }
+    100%{
+        transform: rotateZ(0deg) translateY(0);
+    }
+}
+
+.animation-nav-icon-flip1{
+    animation: nav-icon-flip1 ease 0.25s forwards;
+}
+.animation-nav-icon-flip2{
+    animation: nav-icon-flip2 ease 0.25s forwards;
+}
+.animation-nav-icon-flip3{
+    animation: nav-icon-flip3 ease 0.25s forwards;
+}
+
+.animation-nav-icon-flipback1{
+    animation: nav-icon-flipback1 ease 0.25s forwards;
+}
+
+.animation-nav-icon-flipback2{
+    animation: nav-icon-flipback2 ease 0.25s forwards;
+}
+
+.animation-nav-icon-flipback3{
+    animation: nav-icon-flipback3 ease 0.25s forwards;
+}
+
+.animation-fade-in{
+    animation: fade-in-up ease-out 1s;
+}
+
+.animation-fade-in-down{
+    animation: fade-in-down ease-out 1s;
+}
+
+
+.animation-slide-in{
+    animation: slide-in ease-in-out 250ms 100ms;
+}
+
+.animation-scroll{
+    animation: scroll-bar ease-out 500s infinite;
+}
+

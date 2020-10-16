@@ -1,0 +1,96 @@
+@mixin media-min-width($max, $min) {
+    @media (max-width: $max) and (min-width: $min){
+        @content;
+    }
+}
+
+.top-header{
+    margin-top: -50px;
+    grid-area: top-header;
+    display: flex;
+    background: #213a7f;
+    height: 50px;
+    justify-content: center;
+    @include media-min-width(30rem, 0){ 
+        height: 10px;
+        margin-top: 0;
+    }
+    // justify-content: center;
+    ul{
+        margin-left: 60px;
+        height: 100%;
+        //width: 90vw;
+        display: flex;
+        list-style: none;
+        color: white;
+        align-items: flex-end;
+        justify-content: center;
+        @include media-min-width(30rem, 0){ 
+            display: none;
+        }
+        //padding: 0 0.5rem;
+        li {
+            display: flex;
+            //align-items: flex-start;
+            a{
+                font-size: 0.93rem;
+                padding: 0 0.5rem 0.5rem 0.5rem;
+                text-decoration: none;
+                color: inherit;
+                &:hover,
+                &:active{
+                    text-decoration: underline;
+                    }
+            }
+            .num{
+                font-size: 0.75rem;
+            }
+        }
+        span{
+            @include media-min-width(67rem, 0){
+                display: none;
+            }
+        }
+        #topbar-list-item-4{
+            font-weight: 700;
+            @include media-min-width(67rem, 0){
+                display: none;
+            }
+        }
+        #topbar-list-item-5{
+            margin-left: 2.9rem;
+            font-weight: 700;
+            @include media-min-width(67rem, 0){
+                display: none;
+            }
+        }
+        #topbar-list-item-6{
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            background: #122046;
+            color: white;
+            direction: ltr;
+            flex-shrink: 0;
+            width: 225px;
+            @include media-min-width(67rem, 0){
+                display: none;
+            }
+            input, button{
+                -webkit-appearance: none;
+                background: inherit;
+                color: rgb(146, 146, 146);
+                height: 100%;
+                border: 0;
+                text-align: right;
+            }
+            input{
+                width: 181px;
+            }
+            button{
+                width: 38px;
+            }
+        }
+    }
+   
+}

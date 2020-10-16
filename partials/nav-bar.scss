@@ -1,0 +1,220 @@
+@import './animations.scss';
+
+.bottom-line{
+    position: absolute;
+    top: 63px;
+    width: 100%;
+    background: white;
+    height: 15px;
+    border-bottom: 2px solid #213a7f;
+    @include media-min-width(67rem, 0){
+        display: none;
+    }
+}
+.nav-bar{
+    z-index: 100;
+    background: white;
+    grid-area: nav-bar;
+    position: sticky;
+    display: flex;
+    top: 0;
+    padding-top: 19px;
+    height: 75px;
+    width: 100%;
+    @include media-min-width(67rem, 0){
+        height: 100%; 
+        border-bottom: 2px solid #213a7f;
+        position: relative;
+    }
+    .nav-bar-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        z-index: 99;
+        @include media-min-width(67rem, 0){
+            padding: 0 10px 5px 0;
+        }
+    }
+    //outline: 2px solid #213a7f;
+    justify-content: center;
+    .container{
+        width: 950px;
+        display: flex;
+        direction: rtl;
+        align-items: flex-start;
+        @include media-min-width(67rem, 0){
+            width: 100%;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            height: max-content;
+        }
+    }
+    ul{
+        z-index: 99;
+        background: white;
+        padding: 30px 0 0 0;
+        height: 100%;
+        display: flex;
+        list-style: none;
+        //align-items: flex-start;
+        justify-content: center;
+        @include media-min-width(67rem, 0){
+            display: none;
+            width: 100%;
+            padding: 0 10px 10px 0;
+        }
+        .tag{
+            @include media-min-width(67rem, 0){
+                display: none;
+            }
+            margin-top: -49px;
+            margin-right: 802px;
+            font-weight: 600;
+            width: 86px;
+            height: 115px;
+            background: url('../img/tag.png') no-repeat;
+            position: absolute;
+            z-index: 99;
+            color: white;
+            font-size: 13.5px;
+            padding-top: 7px;
+            text-align: center;
+            a{
+                padding: 10px;
+                font-size: 10px;
+                color: inherit;
+                font-weight: 400;
+                text-decoration: underline;
+            }
+        }
+        #blog{
+            display: none;
+            @include media-min-width(67rem, 0){
+                display: block;
+            }
+        }
+        li{
+            font-size: 1.1rem;
+            display: inline-block;
+            padding-right: 10px;
+            margin: 0 5px;
+            align-self: end;
+            span{
+                &:hover,
+                &:active{
+                    text-decoration: underline;
+                    color: #213a7f;
+                    cursor: pointer;
+                }
+            }
+            @include media-min-width(67rem, 0){
+                // display: none;
+                display: block;
+                width: 100%;
+                margin: 0;
+                padding: 10px 5px;
+            }
+        }
+        .triangle{
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-right: 4px;
+            vertical-align: middle;
+            border-top: 4px dashed;
+            border-right: 4px solid transparent;
+            border-left: 4px solid transparent;
+            @include media-min-width(67rem, 0){
+                content: url('https://www.hackeru.co.il/assets/site/images/menu_row.png');
+                width: auto;
+                height: auto;
+                border: none;
+                margin-right: 6px;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+    .dropdown{
+        display: none;
+        position: absolute;
+        margin: 0 -15px;
+        background: #213a7f;
+        max-width: 600px;
+        z-index: 100;
+        border-radius: 7px;
+        text-align: right;
+        @include media-min-width(67rem, 0){
+            position: static;
+            background: none;
+            border-radius: 0;
+            max-width: 100%;
+            margin: 0;
+        }
+        .column{
+            margin: 15px 10px;
+            display: flex;
+            flex-direction: column;
+            @include media-min-width(67rem, 0){
+                background: none;
+                width: 100%;
+                margin: 10px 0;
+            }
+            a{
+                font-weight: 600;
+                width: 175px;
+                padding: 5px 15px;
+                text-decoration: none;
+                color: #aad6be;
+                font-size: 0.85rem;
+                &:hover,
+                &:active{
+                    background: #aad6be;
+                    color: #213a7f;
+                }
+                @include media-min-width(67rem, 0){
+                    font-weight: 400;
+                    width: 100%;
+                    padding: 10px 0;
+                    color: black;
+                    font-size: 1.04rem;
+                    border-bottom: 1px dashed #aad6be;
+                    &:hover,
+                    &:active{
+                        background: none;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    #nav-icon{
+        position: absolute;
+        left: 0;
+        display: none;
+        height: 45px;
+        width: 60px;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        padding: 10px;
+        @include media-min-width(67rem, 0){
+            display: block;
+            cursor: pointer;
+        }
+        span{
+            height: 5px;
+            width: 40px;
+            background: #213a7f;
+            border-radius: 30px;
+            transition: .25s ease-in-out;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+    }
+}
+

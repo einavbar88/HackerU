@@ -1,0 +1,99 @@
+@import './animations.scss';
+
+.advantages{
+    grid-area: advantages;
+    position: relative;
+    background: url('../img/advantages-bg.png');
+    width: 100%;
+    justify-self: center;
+    background-size: cover;
+    padding: 43px auto;
+    display: grid;
+    grid-template-areas: "advantages-title"
+                         "advantages-content";
+    grid-template-rows: 95px auto;
+    justify-content: center;
+    padding-bottom: 100px;
+    @include media-min-width(67rem, 0){
+        grid-template-rows: auto;
+        width: 100%;
+    }
+    .advantages__title{
+        grid-area: advantages-title;
+        font-size: 2.5rem;
+        font-weight: 500;
+        @include media-min-width(67rem, 0){ 
+            justify-self: center;
+            margin: 35px 0;
+            width: 40vw;
+        }
+        @include media-min-width(30rem, 0){ 
+        justify-self: start;
+        width: 70%;
+        margin: 25px 0;
+        font-size: 2rem;
+        }
+        
+    }
+    .advantages-content__container{
+        grid-area: advantages-content;
+        width: 930px;
+        display: flex;
+        flex-wrap: wrap;
+        @include media-min-width(67rem, 30rem){
+            width: 50%;
+            justify-self: center; 
+            justify-content: center;
+        }
+        @include media-min-width(30rem, 0){
+            width: 98%;
+            justify-self: center; 
+            justify-content: start;
+        }
+        .advantages-sections__container{
+            display: flex;
+            width: 462px;
+            margin-bottom: 38px;
+            @include media-min-width(67rem, 30rem){ 
+                width: 40vw;
+                display: block;
+            }
+            @include media-min-width(30rem, 0){ 
+                width: 98%;
+                display: block;
+            }
+            
+        }
+        .advantages-content__img{
+            display: flex;
+            width: 70px;
+            align-items: flex-start;
+            img{
+                margin-top: 16px;
+                width: 50px; 
+            }
+        }
+        .advantages-content__text{
+            width: 322px;
+            line-height: 1.7;
+            @include media-min-width(67rem, 0){ 
+                width: auto;
+            }
+            h4{
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+            p{
+                font-size: 15.7px;
+                width: 322px;
+                @include media-min-width(67rem, 0){ 
+                    width: auto;
+                }
+            }
+            a{
+                line-height: 2.5;
+                color: #213a7f
+            }
+        }
+    }
+}

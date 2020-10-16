@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> לימודי מחשבים, לימודי אינטרנט והייטק - HackerU | האקריו</title>
+    <link rel="icon" href="https://www.hackeru.co.il/faviconhackeru.png">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <div class="backdrop">
+        <div class="circle animation-fade-in-down">
+            <img id="laptop-img" src="https://static.adoric.com/1585557234472_abk87l6v2kf/laptop.png">
+            <div class="pen-cup__container"><img id="pen-cup-img"
+                    src="https://adoric-images.s3.amazonaws.com/1509719753007_d6tj2u6w57pkxw63ltsz1714i.png">
+            </div>
+            <div class="pen__container">
+                <img id="pen-img"
+                    src="https://adoric-images.s3.amazonaws.com/1509719753007_d6tj2u6w57pkxw63ltsz1714i.png">
+            </div>
+            <h1 class="x">x</h1>
+            <h4>עברנו ללימודי אונליין!</h4>
+            <h2>ללמוד הייטק ודיגיטל LIVE בזמן שנוח לך</h2>
+            <h6>רוצה לשמוע עוד?</h6>
+            <form action="#">
+                <input class="input" type="text" value="שם מלא">
+                <input class="input" type="text" value="מספר טלפון">
+                <input class="input" type="text" value="אי-מייל">
+                <div class="checkbox">
+                    <input type="checkbox"><span>אני מאשר קבלת עדכונים ומבצעים מהאקריו</span>
+                </div>
+                <a href="#"><span>לשיחת ייעוץ</span></a>
+            </form>
+        </div>
+    </div>
+    <header class="top-header">
+        <ul class="top-bar__items">
+            <li><a href="https://www.hackampus.com/sign">כניסת סטודנטים</a> |</li>
+            <li><a href="https://www.hackeru.co.il/blog">בלוג</a> |</li>
+            <li><a href="https://www.hackeru.co.il/students-benefits">הטבות לסטודנטים</a><span>|</span></li>
+            <li id="topbar-list-item-4"><a href="https://www.hackampus.com/sign">ייעוץ לימודים. <span
+                        class="num">03-7207027</span></a> |</li>
+            <li id="topbar-list-item-5"><a href="https://www.hackampus.com/sign">שירות לסטודנטים. <span
+                        class="num">03-613-5565</span></a></li>
+            <div id="topbar-list-item-6">
+                <button id="search"><img src="https://www.hackeru.co.il/assets/site/images/search.png"></button>|<input
+                    type="text" value="חיפוש">
+            </div>
+        </ul>
+    </header>
+    <div class="nav-bar">
+        <div class="nav-bar-container">
+            <div class="container">
+                <img src="./img/logo.png">
+                <ul id="nav-bar-items">
+                    <li class="nav-menu"><span>קורסים</span><span class="triangle"></span>
+                        <div class="dropdown">
+                            <div class="column">
+                                <a href="https://www.hackeru.co.il/course/cyber"
+                                    alt="לינק קישור לדף קורס סייבר ואבטחת מידע Ethical Hacking">קורס סייבר ואבטחת מידע
+                                    Ethical Hacking</a>
+                                <a href="https://www.hackeru.co.il/course/network-management"
+                                    alt="לינק קישור לדף קורס ניהול רשתות, אבטחת מידע ומחשוב ענן">קורס ניהול רשתות, אבטחת
+                                    מידע ומחשוב ענן</a>
+
+                                <a href="https://www.hackeru.co.il/course/marketing"
+                                    alt="לינק קישור לדף קורס שיווק דיגיטלי - קורס קידום אתרים, רשתות חברתיות, פרסום ומכירות באינטרנט">קורס
+                                    שיווק דיגיטלי - קורס קידום אתרים, רשתות חברתיות, פרסום ומכירות באינטרנט</a>
+
+                                <a href="https://www.hackeru.co.il/course/qa"
+                                    alt="לינק קישור לדף קורס QA בודק תוכנה">קורס
+                                    QA
+                                    בודק תוכנה</a>
+                            </div>
+                            <div class="column">
+                                <a href="https://www.hackeru.co.il/course/graphic-design"
+                                    alt="לינק קישור לדף קורס עיצוב גרפי עם התמחות ב-UI/UX">קורס עיצוב גרפי עם התמחות
+                                    ב-UI/UX</a>
+                                <a href="https://www.hackeru.co.il/course/web-developer"
+                                    alt="לינק קישור לדף קורס בניית אתרים - Full Stack Development">קורס בניית אתרים -
+                                    Full
+                                    Stack
+                                    Development</a>
+                                <a href="https://www.hackeru.co.il/course/applications"
+                                    alt="לינק קישור לדף קורס פיתוח אפליקציות ל-Android ול-iPhone">קורס פיתוח אפליקציות
+                                    ל-Android
+                                    ול-iPhone</a>
+
+                                <a href="https://www.hackeru.co.il/course/linux"
+                                    alt="לינק קישור לדף קורס ניהול שרתי לינוקס (Linux)">קורס ניהול שרתי לינוקס
+                                    (Linux)</a>
+                            </div>
+                            <div class="column">
+                                <a href="https://www.hackeru.co.il/course/animation"
+                                    alt="לינק קישור לדף קורס אנימציה תלת מימדית תוכנת מאיה עם התמחות ב-ZBrush">קורס
+                                    אנימציה
+                                    תלת מימדית תוכנת מאיה עם התמחות ב-ZBrush</a>
+                                <a href="https://www.hackeru.co.il/course/gaming"
+                                    alt="לינק קישור לדף קורס פיתוח משחקים Gaming &amp; VR">קורס פיתוח משחקים Gaming
+                                    &amp;
+                                    VR</a>
+                                <a href="https://www.hackeru.co.il/course/dba" alt="לינק קישור לדף קורס DBA Master">קורס
+                                    DBA
+                                    Master</a>
+                                <a href="https://www.hackeru.co.il/course/dot-net"
+                                    alt="לינק קישור לדף קורס תכנות NET.">קורס
+                                    תכנות NET.</a>
+                                <a href="https://www.hackeru.co.il/course/qa-automation"
+                                    alt="לינק קישור לדף קורס מפתחי אוטומציה ל-QA">קורס מפתחי אוטומציה ל-QA</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-menu"><span>אודות</span><span class="triangle"></span>
+                        <div class="dropdown">
+                            <div class="column">
+                                <a href="https://www.hackeru.co.il/about-hackeru">אודות האקריו</a>
+                                <a href="https://www.hackeru.co.il/faq">שאלות נפוצות</a>
+                                <a href="https://www.hackeru.co.il/pearson">מרכז בחינות הסמכה</a>
+                                <a href="https://www.hackeru.co.il/jobs-in-hackeru">דרושים</a>
+                                <a href="https://www.hackeru.co.il/holidays">לוח חופשות</a>
+                                <a href="https://www.hackeru.co.il/from-the-press">מהעיתונות</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-menu"><span>למה HackerU</span><span class="triangle"></span>
+                        <div class="dropdown">
+                            <div class="column">
+                                <a href="https://www.hackeru.co.il/#fourth">איך זה עובד</a>
+                                <a href="https://www.hackeru.co.il/obligation">התחייבות חוזית לעבודה</a>
+                                <a href="https://www.hackeru.co.il/faculty">סגל מרצים מנצח</a>
+                                <a href="https://www.hackeru.co.il/curriculum">תכנית לימודים מקיפה</a>
+                                <a href="https://www.hackeru.co.il/central-location">מיקום מרכזי</a>
+                                <a href="https://www.hackeru.co.il/degrees">הסבת אקדמאים</a>
+                                <a href="https://www.hackeru.co.il/hackeru-freelance">HackerU Freelance</a>
+                                <a href="https://www.hackeru.co.il/first-degree-completion-studies">השלמה לתואר
+                                    ראשון</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-menu"><span>השמה</span><span class="triangle"></span>
+                        <div class="dropdown">
+                            <div class="column">
+                                <a href="https://www.hackeru.co.il/placement">השמה</a>
+                                <a href="https://www.hackeru.co.il/exclusive-jobs-for-students">משרות בלעדיות
+                                    לסטודנטים</a>
+                                <a href="https://www.hackeru.co.il/companies-we-work-with">חברות איתן אנו עובדים</a>
+                                <a href="https://www.hackeru.co.il/looking-for-employees">מחפשים עובדים?</a>
+                                <a href="https://www.hackeru.co.il/blog/category/building-a-career-in-high-tech">בניית
+                                    קריירה בהייטק</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-menu"><span>מפות הגעה</span><span class="triangle"></span>
+                        <div class="dropdown">
+                            <div class="column">
+                                <a href="https://www.hackeru.co.il/contact">מפות הגעה</a>
+                                <a href="https://www.hackeru.co.il/campus-ramat-gan">לימודים במרכז - רמת גן</a>
+                                <a href="https://www.hackeru.co.il/campus-haifa">לימודים בחיפה</a>
+                                <a href="https://www.hackeru.co.il/campus-jerusalem">לימודים בירושלים</a>
+                                <a href="https://www.hackeru.co.il/campus-beer-sheva">לימודים בבאר שבע</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-menu"><span>סיפורי הצלחה</span><span class="triangle"></span>
+                        <div class="dropdown">
+                            <div class="column">
+                                <a href="https://www.hackeru.co.il/success-stories">סיפורי הצלחה</a>
+                                <a href="https://www.hackeru.co.il/testimony-graduates">עדויות בוגרים</a>
+                                <a href="https://www.hackeru.co.il/testimony-employers">עדויות מעסיקים</a>
+                                <a href="https://www.hackeru.co.il/graduate-projects">עבודות בוגרים</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="blog"><a href="https://www.hackeru.co.il/blog"><span>בלוג</span></a></li>
+                    <li class="nav-menu"><a href="https://www.hackeru.co.il/rent-a-class">השכרת כיתות</a></li>
+                    <div class="tag">חייל<br>משוחרר?<br><a href="">לחץ/י כאן</a></div>
+                </ul>
+                <div id="nav-icon">
+                    <span class="icon"></span>
+                    <span class="icon"></span>
+                    <span class="icon"></span>
+                </div>
+            </div>
+            <div class="bottom-line"></div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-text"></div>
+        <p>המרכז להשמה והכשרת עובדים למקצועות ההייטק</p>
+        <span>מספר אחת בהשמת בוגרים בהייטק!</span>
+    </div>
+    <div class="courses">
+        <div class="title">הקורסים שלנו עכשיו גם אונליין</div>
+        <div class="contact">
+            <form action="">
+                <h2>רוצה לשמוע עוד?</h2>
+                <div class="input-container"><label>שם מלא</label><span>|</span>
+                    <input type="text">
+                </div>
+                <div class="input-container"><label>טלפון</label><span>|</span>
+                    <input type="text">
+                </div>
+                <div class="input-container"><label>אי-מייל</label><span>|</span>
+                    <input type="text">
+                </div>
+                <div class="checkbox-container">
+                    <input id="contact-policy-checkbox" type="checkbox"><span id="contact-policy-checkbox-label">אני
+                        מאשר קבלת עדכונים ומבצעים מהאקריו בכפוף לתקנון.</span>
+                </div>
+                <a id="privacy-policy" href="#privacy-policy-text">מדיניות פרטיות משתמשים</a>
+                <button class="button" id="side-form-button">
+                    <div class="contact-btn">דברו איתי!</div>
+                </button>
+            </form>
+        </div>
+        <div class="courses-list">
+            <a class="course-container fade" href="https://www.hackeru.co.il/course/cyber">
+                <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.35.16-cyber.svg">
+                <div id="cyber" class="course-seperator"></div>
+                <div class="course-name">קורס סייבר ואבטחת מידע
+                    Ethical Hacking</div>
+                <div class="courses-arrow">
+                    <img src="https://www.hackeru.co.il/assets/site/images/arrow.svg">
+                </div>
+            </a>
+            <a class="course-container fade" href="https://www.hackeru.co.il/course/network-management">
+                <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.34.59-network-management.svg">
+                <div id="cloud" class="course-seperator"></div>
+                <div class="course-name">קורס ניהול רשתות, אבטחת מידע ומחשוב ענן</div>
+                <div class="courses-arrow">
+                    <img src="https://www.hackeru.co.il/assets/site/images/arrow.svg">
+                </div>
+            </a>
+            <a class="course-container fade" href="https://www.hackeru.co.il/course/marketing">
+                <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.41.07-marketing.svg">
+                <div id="marketing" class="course-seperator"></div>
+                <div class="course-name">קורס שיווק דיגיטלי - קורס קידום אתרים, רשתות חברתיות, פרסום ומכירות באינטרנט
+                </div>
+                <div class="courses-arrow">
+                    <img src="https://www.hackeru.co.il/assets/site/images/arrow.svg">
+                </div>
+            </a>
+            <a class="course-container fade" href="https://www.hackeru.co.il/course/qa">
+                <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.32.31-qa.svg">
+                <div id="qa" class="course-seperator"></div>
+                <div class="course-name">קורס QA בודק תוכנה</div>
+                <div class="courses-arrow">
+                    <img src="https://www.hackeru.co.il/assets/site/images/arrow.svg">
+                </div>
+            </a>
+            <a class="course-container fade" href="https://www.hackeru.co.il/course/graphic-design">
+                <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.34.31-graphic-design.svg">
+                <div id="graphic" class="course-seperator"></div>
+                <div class="course-name">קורס עיצוב גרפי עם התמחות ב-UI/UX</div>
+                <div class="courses-arrow">
+                    <img src="https://www.hackeru.co.il/assets/site/images/arrow.svg">
+                </div>
+            </a>
+            <a class="course-container fade" href="https://www.hackeru.co.il/course/web-developer">
+                <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.35.50-web-dev.svg">
+                <div id="full-stack" class="course-seperator"></div>
+                <div class="course-name">קורס בניית אתרים - Full Stack Development</div>
+                <div class="courses-arrow">
+                    <img src="https://www.hackeru.co.il/assets/site/images/arrow.svg">
+                </div>
+            </a>
+            <a class="course-container fade" href="https://www.hackeru.co.il/course/applications">
+                <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.38.36-apps.svg">
+                <div id="mobile" class="course-seperator"></div>
+                <div class="course-name">קורס פיתוח אפליקציות ל-Android ול-iPhone</div>
+                <div class="courses-arrow">
+                    <img src="https://www.hackeru.co.il/assets/site/images/arrow.svg">
+                </div>
+            </a>
+            <a class="course-container fade" href="https://www.hackeru.co.il/course/linux">
+                <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.33.47-linux.svg">
+                <div id="linux" class="course-seperator"></div>
+                <div class="course-name">קורס ניהול שרתי לינוקס (Linux)</div>
+                <div class="courses-arrow">
+                    <img src="https://www.hackeru.co.il/assets/site/images/arrow.svg">
+                </div>
+            </a>
+            <a class="course-container fade" href="https://www.hackeru.co.il/course/animation">
+                <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.36.06-animation.svg">
+                <div id="animation" class="course-seperator"></div>
+                <div class="course-name">קורס אנימציה תלת מימדית תוכנת מאיה עם התמחות ב-ZBrush</div>
+                <div class="courses-arrow">
+                    <img src="https://www.hackeru.co.il/assets/site/images/arrow.svg">
+                </div>
+            </a>
+            <a class="course-container fade" href="https://www.hackeru.co.il/course/gaming">
+                <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.37.06-gaming.svg">
+                <div id="gaming" class="course-seperator"></div>
+                <div class="course-name">קורס פיתוח משחקים Gaming & VR</div>
+                <div class="courses-arrow">
+                    <img src="https://www.hackeru.co.il/assets/site/images/arrow.svg">
+                </div>
+            </a>
+            <a class="course-container fade" href="https://www.hackeru.co.il/course/dba">
+                <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.37.24-dba.svg">
+                <div id="dba" class="course-seperator"></div>
+                <div class="course-name">קורס DBA Master</div>
+                <div class="courses-arrow">
+                    <img src="https://www.hackeru.co.il/assets/site/images/arrow.svg">
+                </div>
+            </a>
+            <a class="course-container fade" href="https://www.hackeru.co.il/course/dba">
+                <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.33.06-net.svg">
+                <div id="dot-net" class="course-seperator"></div>
+                <div class="course-name">קורס תכנות NET.</div>
+                <div class="courses-arrow">
+                    <img src="https://www.hackeru.co.il/assets/site/images/arrow.svg">
+                </div>
+            </a>
+            <a class="course-container fade" href="https://www.hackeru.co.il/course/qa-automation">
+                <img src="https://www.hackeru.co.il/assets/site/images/19.12.15.15.36.41-automation.svg">
+                <div id="automation" class="course-seperator"></div>
+                <div class="course-name">קורס מפתחי אוטומציה ל-QA</div>
+                <div class="courses-arrow">
+                    <img src="https://www.hackeru.co.il/assets/site/images/arrow.svg">
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="read-more">
+        <div class="read-more__content">
+            <div id="right" class="read-more__container">
+                <div class="read-more__img">
+                    <img src="https://www.hackeru.co.il/assets/site/images/global.svg">
+                </div>
+                <div class="read-more__text">
+                    <h4>HackerU העולמית</h4>
+                    <p>ל- HackerU פריסה עולמית הכוללת שיתופי פעולה עם אוניברסיטאות מובילות בארה"ב, הודו ואירופה. במסגרת
+                        שיתוף הפעולה HackerU מציעה מסלולי לימוד שונים כדוגמת: סייבר ואבטחת מידע, שיווק דיגיטלי, UI\UX
+                        ועוד. </p>
+                    <a href="http://hackeru.com/">קרא עוד&nbsp; <span class="arrow">←</span></a>
+                </div>
+            </div>
+            <div id="left" class="read-more__container">
+                <div class="read-more__img">
+                    <img src="https://www.hackeru.co.il/assets/site/images/buildings.svg">
+                </div>
+                <div class="read-more__text">
+                    <h4>HackerU לעסקים</h4>
+                    <p>HackerU-Pro החטיבה העסקית של HackerU מתמחה בהכשרה מקצועית בתחומי ההייטק והעיצוב השונים. מתן ייעוץ
+                        מקצועי לעסקים וגופים ממשלתיים בנושאים טכנולוגיים מגוונים. </p>
+                    <a href="http://hackeru.com/">קרא עוד&nbsp; <span class="arrow">←</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="advantages">
+        <div class="advantages__title fade">היתרונות ללומדים בהאקריו</div>
+        <div class="advantages-content__container">
+            <div class="advantages-sections__container fade">
+                <div class="advantages-content__img">
+                    <img src="https://www.hackeru.co.il/assets/site/images/advs_1.svg">
+                </div>
+                <div class="advantages-content__text">
+                    <h4>שיטת מיון ייחודית</h4>
+                    <p>שיטת מיון ייחודית לזיהוי והתאמת כישוריך בתחומי ההייטק הכוללת התנסות מעשית ללא סיכון כספי </p>
+                    <a href="https://www.hackeru.co.il/proccess">שיטת המיון</a>
+                </div>
+            </div>
+            <div class="advantages-sections__container fade">
+                <div class="advantages-content__img">
+                    <img src="https://www.hackeru.co.il/assets/site/images/advs_6.svg">
+                </div>
+                <div class="advantages-content__text">
+                    <h4>ללמוד מהבית מקצוע Online</h4>
+                    <p>קורסים אונליין הישר בשידור LIVE למחשב שלכם בבית. אותם מסלולי הלימוד והתכנים עם הטכנולוגיה
+                        האיכותית והטובה ביותר.</p>
+                </div>
+            </div>
+            <div class="advantages-sections__container fade">
+                <div class="advantages-content__img">
+                    <img src="https://www.hackeru.co.il/assets/site/images/advs_3.svg">
+                </div>
+                <div class="advantages-content__text">
+                    <h4> סגל מרצים מנצח </h4>
+                    <p>סגל הוראה המתמחה במקצועות ההייטק המבוקשים בניהם מנהלים בכירים בחברות הייטק, יזמים ועצמאיים בעלי
+                        חברות וניסיון מעשי רב שנים. אחרת איך תלמדו את הפרקטיקה הנדרשת בשוק העבודה?</p>
+                    <a href="https://www.hackeru.co.il/faculty">מיהם המרצים?</a>
+                </div>
+            </div>
+            <div class="advantages-sections__container fade">
+                <div class="advantages-content__img">
+                    <img src="https://www.hackeru.co.il/assets/site/images/advs_4.svg">
+                </div>
+                <div class="advantages-content__text">
+                    <h4>מלגת לימודים והתחייבות חוזית לעבודה</h4>
+                    <p>מאות מעסיקים, מנכל"ים, סמנכל"ים ומנהלות משאבי אנוש מהחברות הגדולות בשוק שעובדים איתנו כדי למצוא
+                        לכם עבודה בסיום הלימודים! סטודנט שעבר בהצלחה את שלב המיון יקבל התחייבות חוזית לעבודה ומלגת
+                        לימודים עד ₪7,000 גובה המלגה תלוי במסלול ההכשרה שבחרת</p>
+                    <a href="https://www.hackeru.co.il/testimony-employers">מי מעסיק את הבוגרים שלנו?</a>
+                </div>
+            </div>
+            <div class="advantages-sections__container fade">
+                <div class="advantages-content__img">
+                    <img src="https://www.hackeru.co.il/assets/site/images/advs_5.svg">
+                </div>
+                <div class="advantages-content__text">
+                    <h4>תוכנית לימודים מקיפה</h4>
+                    <p>הקורסים המקיפים והפרקטיים ביותר מבחינת כמות שעות ותכנים המותאמים לשוק העבודה</p>
+                    <a href="https://www.hackeru.co.il/curriculum">מה לומדים?</a>
+                </div>
+            </div>
+            <div class="advantages-sections__container fade">
+                <div class="advantages-content__img">
+                    <img src="https://www.hackeru.co.il/assets/site/images/advs_2.svg">
+                </div>
+                <div class="advantages-content__text">
+                    <h4>מיקום מרכזי</h4>
+                    <p>קל להגיע וקל לחזור, ארבעה סניפים בערים מרכזיות רמת גן, ירושלים, באר שבע וחיפה, רק 5 דקות מתחנת
+                        הרכבת </p>
+                    <a href="https://www.hackeru.co.il/central-location">איפה אנחנו יושבים?</a>
+                </div>
+            </div>
+            <div class="advantages-sections__container fade">
+                <div class="advantages-content__img">
+                    <img src="https://www.hackeru.co.il/assets/site/images/advs_7.svg">
+                </div>
+                <div class="advantages-content__text">
+                    <h4>פריסה עולמית</h4>
+                    <p>שיתופי פעולה עם אוניברסיטאות מובילות ברחבי ארה"ב, הודו ואירופה </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="how-it-works">
+        <h1 class="fade">איך זה עובד?</h1>
+        <div class="hiw-main-text">
+            <p>
+                HackerU מקיימת קשרי עבודה ענפים עם למעלה מ- 1400 חברות ברחבי הארץ ובעצם משמשת כקרש קפיצה לעולם ההייטק.
+                חברות
+                רבות כבר יודעות שב– HackerU הן יכולות למצוא כוח אדם מקצועי, מיומן ואיכותי בעל ידע פרקטי ויישומי לעבודה.
+                ל-HackerU שיתופי פעולה ברחבי העולם, שם היא מלמדת את קורסי סייבר ואבטחת מידע ושיווק דיגיטלי באוניברסיטאות
+                המובילות בארה"ב, הודו ואירופה.
+            </p>
+            <p>
+                התהליך מתחיל מראיון טלפוני ופגישה אישית עם יועץ לימודים המכוון את המועמד לקורס המתאים לו ביותר וממשיך
+                לשלב
+                המיון שנע בין 20 ל-40 שעות בו ניתן להתנסות בתכנים השונים ולבדוק האם ישנה התאמה בין המועמד לבין מסלול
+                הלימודים הנבחר. שלב המיון הינו ללא כל סיכון כספי מצד המועמד. במידה והמועמד אינו עובר את מבחן סיום שלב
+                המיון
+                או לחלופין מחליט כי התחום אינו מתאים לו והוא לא מעוניין להמשיך ללמוד - שכר הלימוד יוחזר לו במלואו.
+            </p>
+            <p>
+                במידה והמועמד עובר את שלב המיון בהצלחה ומעוניין להמשיך לקורס המלא, ייחתם מולו חוזה השמה ויקבל מלגת
+                לימודים
+                עד 7,000 ₪ תלוי במסלול אותו הוא מעוניין ללמוד. מטרתנו העיקרית היא להביא כמה שיותר בוגרים ישירות אל עולם
+                ההייטק בעזרת סגל מרצים מהמוביל בתחום ומערך לימודים מקיף ומקצועי הנותן לכל סטודנט את ארגז הכלים הנחוץ לו
+                לפרוץ לעולם ההייטק.
+            </p>
+        </div>
+        <h2>התהליך שלנו</h2>
+        <div class="process__container">
+            <div id="box1" class="process__box slide">
+                <img class="side-arrow">
+                <span>1</span>
+                <h5>פגישת ייעוץ</h5>
+                <div class="line"></div>
+                <p>בפגישה נערך ראיון אישי עם המועמד, אנו בודקים את הרקע שלו ואת יכולת ההשתלבות שלו בתעשייה </p>
+            </div>
+            <div id="box2" class="process__box slide">
+                <img src="https://www.hackeru.co.il/assets/site/images/level_vector.png" class="side-arrow">
+                <span>2</span>
+                <h5>קורס מיון</h5>
+                <div class="line"></div>
+                <p>שלב זה אורך בין 40-20 שעות על מנת לבדוק את יכולות המועמד ללימודי המשך ולהשמה בעבודה. לא עברת את שלב
+                    המיון ? תקבל החזר כספי של שכר הלימוד ששילמת</p>
+            </div>
+            <div id="box3" class="process__box slide">
+                <img src="https://www.hackeru.co.il/assets/site/images/level_vector.png" class="side-arrow">
+                <span>3</span>
+                <h5>ללכת על בטוח</h5>
+                <div class="line"></div>
+                <p>אחרי שעברת את שלב המיון בהצלחה ונשמת לרווחה, תקבל התחייבות חוזית לעבודה ומלגת לימודים עד 7,000 ₪ תלוי
+                    במסלול שבחרת </p>
+            </div>
+            <div id="box4" class="process__box slide">
+                <img src="https://www.hackeru.co.il/assets/site/images/level_vector.png" class="side-arrow">
+                <span>4</span>
+                <h5> מתחילים ללמוד </h5>
+                <div class="line"></div>
+                <p>הלימודים אצלנו פרקטיים ומטרתם לשלב את הבוגרים שלנו בתעשייה, לצורך זה תוכנית הלימודים שלנו היא
+                    המקצועית והמקיפה ביותר ובזכותה אנחנו מספר אחת בהשמת בוגרים בהייטק </p>
+            </div>
+        </div>
+        <a href="https://www.hackeru.co.il/#">
+            <span>קביעת פגישת ייעוץ</span>
+        </a>
+    </div>
+    <div class="scroll-bar">
+        <ul class="animation-scroll">
+            <li>
+                <b>שיראל אברג'יל</b>,
+                מבוגרי
+                קורס עיצוב גרפי עם התמחות ב-UI/UX,
+                עובדת במשרד פרסום "SIMI GROUP"
+                <span>//</span>
+            </li>
+            <li>
+                <b>נתי זכרי</b>,
+                מבוגרי
+                קורס ניהול רשתות, אבטחת מידע ומחשוב ענן,
+                עובד בחברת "SafeNet" בתפקיד מנהל רשת
+                <span>//</span>
+            </li>
+            <li>
+                <b>אלעד רבייב</b>,
+                מבוגרי
+                קורס פיתוח אפליקציות ל-Android ול-iPhone,
+                עובד בחברת "Leader Capital Markets" כמפתח אפליקציות ל- Android
+                <span>//</span>
+            </li>
+            <li>
+                <b>דניס פלדמן</b>,
+                מבוגרי
+                קורס ניהול רשתות, אבטחת מידע ומחשוב ענן,
+                מנהל תמיכה טכנית בחברת "Edimax"
+                <span>//</span>
+            </li>
+            <li>
+                <b>ליאוניד ברמן</b>,
+                מבוגרי
+                קורס תכנות NET.,
+                מתכנת בחברת "Daronet"
+                <span>//</span>
+            </li>
+            <li>
+                <b>איתי עובד</b>,
+                מבוגרי
+                קורס QA בודק תוכנה,
+                עובד בחברת "SpotOption" בתפקיד בודק תוכנה
+                <span>//</span>
+            </li>
+            <li>
+                <b>דניאל פרונין</b>,
+                מבוגרי
+                קורס QA בודק תוכנה,
+                בודק תוכנה בחברת "Check Point"
+                <span>//</span>
+            </li>
+            <li>
+                <b>דימה קוסטובסקי</b>,
+                מבוגרי
+                קורס ניהול רשתות, אבטחת מידע ומחשוב ענן,
+                טכנאי מעבדה בחברת "All Trade"
+                <span>//</span>
+            </li>
+            <li>
+                <b>בוריס סמטנין</b>,
+                מבוגרי
+                קורס בניית אתרים - Full Stack Development,
+                מתכנת PHP בחברת "OptionWeb"
+                <span>//</span>
+            </li>
+            <li>
+                <b>משה הרוש</b>,
+                מבוגרי
+                קורס תכנות NET.,
+                ראש צוות תכנות בחברת "WEBID"
+                <span>//</span>
+            </li>
+            <li>
+                <b>בני אביתר</b>,
+                מבוגרי
+                קורס ניהול רשתות, אבטחת מידע ומחשוב ענן,
+                איש אבטחת מידע בחברת "genie"
+                <span>//</span>
+            </li>
+            <li>
+                <b>עמית סידי</b>,
+                מבוגרי
+                קורס ניהול שרתי לינוקס (Linux),
+                חוקר וירוסים בחברת "Digi Trust"
+                <span>//</span>
+            </li>
+            <li>
+                <b>אלירן דורון</b>,
+                מבוגרי
+                קורס שיווק דיגיטלי - קורס קידום אתרים, רשתות חברתיות, פרסום ומכירות באינטרנט,
+                בעלים של חברת "SeoMan"
+                <span>//</span>
+            </li>
+            <li>
+                <b>חזי דמרי</b>,
+                מבוגרי
+                קורס פיתוח אפליקציות ל-Android ול-iPhone,
+                מפתח אפליקציות ל- Android בחברת "Gini-Apps"
+                <span>//</span>
+            </li>
+            <li>
+                <b>סרגיי צ'רניאק</b>,
+                מבוגרי
+                קורס ניהול רשתות, אבטחת מידע ומחשוב ענן,
+                מנהל רשת בחברת "Security"
+                <span>//</span>
+            </li>
+            <li>
+                <b>אבידן איזקס</b>,
+                מבוגרי
+                קורס QA בודק תוכנה,
+                מפתח אוטומציה בחברת "Imonomy"
+                <span>//</span>
+            </li>
+            <li>
+                <b>אלכס רוסטקוב</b>,
+                מבוגרי
+                קורס בניית אתרים - Full Stack Development,
+                מפתח בתחום ה- Web בחברת "Sergata"
+                <span>//</span>
+            </li>
+            <li>
+                <b>רון בן זאב</b>,
+                מבוגרי
+                קורס שיווק דיגיטלי - קורס קידום אתרים, רשתות חברתיות, פרסום ומכירות באינטרנט,
+                הדקה ה-90
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>ניסים אינציג</b>,
+                מבוגרי
+                קורס ניהול רשתות, אבטחת מידע ומחשוב ענן,
+                עובד בחברת "SmarNet" בתמיכה טכנית
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>רועי בן שושן</b>,
+                מבוגרי
+                קורס QA בודק תוכנה,
+                בודק תוכנה בחברת "Binary"
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>שיראל אברג'יל</b>,
+                מבוגרי
+                קורס עיצוב גרפי עם התמחות ב-UI/UX,
+                עובדת במשרד פרסום "SIMI GROUP"
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>נתי זכרי</b>,
+                מבוגרי
+                קורס ניהול רשתות, אבטחת מידע ומחשוב ענן,
+                עובד בחברת "SafeNet" בתפקיד מנהל רשת
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>אלעד רבייב</b>,
+                מבוגרי
+                קורס פיתוח אפליקציות ל-Android ול-iPhone,
+                עובד בחברת "Leader Capital Markets" כמפתח אפליקציות ל- Android
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>דניס פלדמן</b>,
+                מבוגרי
+                קורס ניהול רשתות, אבטחת מידע ומחשוב ענן,
+                מנהל תמיכה טכנית בחברת "Edimax"
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>ליאוניד ברמן</b>,
+                מבוגרי
+                קורס תכנות NET.,
+                מתכנת בחברת "Daronet"
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>איתי עובד</b>,
+                מבוגרי
+                קורס QA בודק תוכנה,
+                עובד בחברת "SpotOption" בתפקיד בודק תוכנה
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>דניאל פרונין</b>,
+                מבוגרי
+                קורס QA בודק תוכנה,
+                בודק תוכנה בחברת "Check Point"
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>דימה קוסטובסקי</b>,
+                מבוגרי
+                קורס ניהול רשתות, אבטחת מידע ומחשוב ענן,
+                טכנאי מעבדה בחברת "All Trade"
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>בוריס סמטנין</b>,
+                מבוגרי
+                קורס בניית אתרים - Full Stack Development,
+                מתכנת PHP בחברת "OptionWeb"
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>משה הרוש</b>,
+                מבוגרי
+                קורס תכנות NET.,
+                ראש צוות תכנות בחברת "WEBID"
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>בני אביתר</b>,
+                מבוגרי
+                קורס ניהול רשתות, אבטחת מידע ומחשוב ענן,
+                איש אבטחת מידע בחברת "genie"
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>עמית סידי</b>,
+                מבוגרי
+                קורס ניהול שרתי לינוקס (Linux),
+                חוקר וירוסים בחברת "Digi Trust"
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>אלירן דורון</b>,
+                מבוגרי
+                קורס שיווק דיגיטלי - קורס קידום אתרים, רשתות חברתיות, פרסום ומכירות באינטרנט,
+                בעלים של חברת "SeoMan"
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>חזי דמרי</b>,
+                מבוגרי
+                קורס פיתוח אפליקציות ל-Android ול-iPhone,
+                מפתח אפליקציות ל- Android בחברת "Gini-Apps"
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>סרגיי צ'רניאק</b>,
+                מבוגרי
+                קורס ניהול רשתות, אבטחת מידע ומחשוב ענן,
+                מנהל רשת בחברת "Security"
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>אבידן איזקס</b>,
+                מבוגרי
+                קורס QA בודק תוכנה,
+                מפתח אוטומציה בחברת "Imonomy"
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>אלכס רוסטקוב</b>,
+                מבוגרי
+                קורס בניית אתרים - Full Stack Development,
+                מפתח בתחום ה- Web בחברת "Sergata"
+                <span>//</span>
+            </li>
+            <li class="tick-clones">
+                <b>רון בן זאב</b>,
+                מבוגרי
+                קורס שיווק דיגיטלי - קורס קידום אתרים, רשתות חברתיות, פרסום ומכירות באינטרנט,
+                הדקה ה-90
+                <span>//</span>
+            </li>
+            <li>
+                <b>ניסים אינציג</b>,
+                מבוגרי
+                קורס ניהול רשתות, אבטחת מידע ומחשוב ענן,
+                עובד בחברת "SmarNet" בתמיכה טכנית
+                <span>//</span>
+            </li>
+            <li>
+                <b>רועי בן שושן</b>,
+                מבוגרי
+                קורס QA בודק תוכנה,
+                בודק תוכנה בחברת "BBinary"
+                <span>//</span>
+            </li>
+        </ul>
+    </div>
+    <div class="whatsapp">
+        <img src="img/WhatsApp.png"><span>היי! אנחנו פה, יש לך שאלה? </span>
+    </div>
+    <div class="whatsapp-mobile-display__container">
+        <a id="right-whatsapp-btn" class="whatsapp-mobile-display__btn" href="tel:036135565">
+            <img id="flip-img" src="https://www.hackeru.co.il/assets/site/images/phone.svg ">
+            <span>שיחה</span>
+        </a>
+        <a id="middle" class="whatsapp-mobile-display__btn" href="#">
+            <img src="https://www.hackeru.co.il/assets/site/images/lead_form.svg">
+            <span>לפרטים</span>
+        </a>
+        <a class="whatsapp-mobile-display__btn"
+            href="https://wa.me/972534925408?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%94%D7%90%D7%A7%D7%A8%D7%99%D7%95%2C%20%D7%91%D7%93%D7%99%D7%95%D7%A7%20%D7%91%D7%99%D7%A7%D7%A8%D7%AA%D7%99%20%D7%91%D7%90%D7%AA%D7%A8%20%D7%A9%D7%9C%D7%9B%D7%9D%2C%20%D7%94%D7%99%D7%99%D7%AA%D7%99%20%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D">
+            <img src="https://www.hackeru.co.il/assets/site/images/whatsapp.svg">
+            <span>ווטסאפ</span>
+        </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

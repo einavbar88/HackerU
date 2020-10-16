@@ -1,0 +1,30 @@
+@import './animations.scss';
+
+.scroll-bar{
+    grid-area: scroll-bar;
+    height: 75px;
+    padding: 10px;
+    width: 99vw;
+    display: block;
+    overflow: hidden;
+    @include media-min-width(67rem, 0){
+        display: none;
+    }
+    ul{
+        width: 35000px;
+        overflow: hidden;
+        direction: rtl;
+        display: flex;
+        flex-wrap: wrap;
+        animation: scroll-bar ease 1h;
+    }
+    li{
+        width: max-content;
+        padding-top: 1rem;
+        list-style: none;
+        span{
+            padding: 0 10px;
+        }
+    }
+}
+

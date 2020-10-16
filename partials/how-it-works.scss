@@ -1,0 +1,148 @@
+@import './animations.scss';
+
+.how-it-works{
+    grid-area: how-it-works;
+    width: 100%;
+    justify-content: center;
+    background: #fbfcfc;
+    padding: 94px 0 0 0;
+    display: grid;
+    grid-template-areas: "hiw-main-title"
+                         "hiw-main-text"
+                         "hiw-process-title"
+                         "hiw-process-container"
+                         "hiw-set-meeting-btn";
+    grid-template-rows: 4.5rem auto 3rem auto 11rem;
+    @include media-min-width(67rem, 0){
+        grid-template-areas: "hiw-main-title"
+                             "hiw-main-text";
+        grid-template-rows: 4.5rem auto;
+        margin-bottom: 70px;
+    }
+    h1{
+        grid-area: hiw-main-title;
+        font-size: 2.6rem;
+        font-weight: 500;
+        @include media-min-width(30rem, 0){
+            font-size: 2rem;
+        }
+    }
+    .hiw-main-text{
+        grid-area: hiw-main-text;
+        display: flex;
+        p{
+            line-height: 1.6;
+            width: 293px;
+            font-size: 1rem;
+            margin: 0 0 10px 17px;
+            @include media-min-width(30rem, 0){
+                width: 100%;
+            }
+        }
+        @include media-min-width(67rem, 0){
+            display: block;
+            width: 100%;
+        }
+    }
+    h2{
+        @include media-min-width(67rem, 0){
+            display: none;
+        }
+        grid-area: hiw-process-title;
+        align-self: stretch;
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+    .process__container{
+        grid-area: hiw-process-container;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 940px;
+        @include media-min-width(67rem, 0){
+            display: none;
+        }
+        .process__box{
+            height: 310px;
+            width: 220px;
+            text-align: center;
+            .side-arrow{
+                position: relative;
+                right: -106px;
+                top: 43px;
+            }
+            span{
+                position: relative;
+                display: block;
+                background: white;
+                height: 55px;
+                width: 55px;
+                padding: 3px;
+                border-radius: 50%;
+                font-size: 2rem;
+                margin: -5px 80px;
+                font-weight: 600;
+            }
+            h5{
+                margin: 10px 0;
+                font-size: 1.4rem;
+                font-weight: 500;
+                color: white;
+            }
+            .line{
+                height: 1px;
+                width: 197px;
+                background: white;
+                margin: 0 auto;
+            }
+            p{
+                color: white;
+                margin: auto;
+                padding: 5px;
+                width: 207px;
+                line-height: 1.4;
+            }
+        }
+        #box1{
+            background: #0598a8;
+            color: #0598a8;
+        }
+        #box2{
+            background: #39a4dc;
+            color: #39a4dc;
+        }
+        #box3{
+            background: #154b9c;
+            color: #154b9c;
+        }
+        #box4{
+            background: #352f8a;
+            color: #352f8a;
+        }
+    }
+    a{
+        @include media-min-width(67rem, 0){
+            display: none;
+        }
+        grid-area: hiw-set-meeting-btn;
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        align-items: center;
+        width: 302px;
+        height: 70px;
+        background: #213a7f;
+        border: 2px solid #213a7f;
+        span{
+            border: 2px solid #aad6be;
+            width: 296px;
+            height: 62px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.45rem;
+            padding: 10px;
+        }
+    }
+
+}

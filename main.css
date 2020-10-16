@@ -266,7 +266,7 @@
 .advantages {
   grid-area: advantages;
   position: relative;
-  background: url("../img/advantages-bg.png");
+  background: url("https://raw.githubusercontent.com/einav15/HackerU/master/img/advantages-bg.png");
   width: 100%;
   justify-self: center;
   background-size: cover;
@@ -833,7 +833,7 @@
   display: flex;
   justify-content: center;
   background-color: #f5f8f9;
-  background-image: url("../img/advantages-bg-50px.jpg");
+  background-image: url("https://raw.githubusercontent.com/einav15/HackerU/master//img/advantages-bg-50px.jpg");
   background-repeat: no-repeat;
   background-size: 100% 40%;
   background-position: bottom;
@@ -1424,7 +1424,7 @@
   font-weight: 600;
   width: 86px;
   height: 115px;
-  background: url("../img/tag.png") no-repeat;
+  background: url("https://raw.githubusercontent.com/einav15/HackerU/master/img/tag.png") no-repeat;
   position: absolute;
   z-index: 99;
   color: white;

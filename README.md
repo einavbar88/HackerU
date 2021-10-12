@@ -11,13 +11,8 @@ A replica of HackerU website from 2020, it includes:
 
 ### Screenshots
 
-- Desktop 
-
-![main page](/screenshots/hackru3.png)
+![main page](/screenshots/hackeru3.png)
 ![main page](/screenshots/hackeru4.png)
 ![main page](/screenshots/hackeru2.png)
-
-- Mobile 
-
 ![main page](/screenshots/hackeru1.png)
 
